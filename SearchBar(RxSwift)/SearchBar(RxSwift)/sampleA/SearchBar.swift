@@ -18,7 +18,7 @@ class SearchBar: UISearchBar{
     let searchButton = UIButton() //검색버튼
     
     let searchButtonTapped = PublishRelay<Void>() //검색버튼 눌렀을 때 발생하는 이벤트 구독 (UI에서 발생하는 이벤트는 error방출 없는 PublishRelay가 적절하다)
-    var shouldLoadResult = Observable<String>.of("") //검색버튼이 눌려진 후 SearchBar의 text를 상위 뷰로 전달하는 ShouldloadResult이벤트 Sequnce. 초기값은 빈값 ""
+    var shouldLoadResult = Observable<String>.of("") //검색버튼이 눌려진 후 SearchBar의 text를 상위 뷰로 전달하는 ShouldloadResult이벤트 Sequnce. 초기값은 빈값 "" 
     
     
     override init(frame: CGRect) {
